@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gold Diggers — Product Prototype & Demo">
+  <title>Gold Diggers — Prototype</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+  <style>
+    .prototype-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .prototype-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 120px 24px 60px;
+    }
+    .prototype-placeholder {
+      text-align: center;
+      max-width: 600px;
+    }
+    .prototype-icon {
+      font-size: 4rem;
+      margin-bottom: 24px;
+    }
+    .prototype-title {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--text-primary) 0%, var(--gold-300) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 16px;
+    }
+    .prototype-text {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gold-400);
+      font-weight: 500;
+      transition: all var(--transition-fast);
+    }
+    .back-link:hover {
+      color: var(--gold-300);
+      gap: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="prototype-page">
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+      <div class="container">
+        <a href="index.html" class="nav-brand">
+          <img src="images/logo.png" alt="Gold Diggers Logo">
+          <div class="nav-brand-text">
+            <span class="nav-brand-name">Gold Diggers</span>
+            <span class="nav-brand-tagline">AI Mining Intelligence</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">← Back to Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Prototype Content — TO BE FILLED BY TEAM MEMBER -->
+    <div class="prototype-content">
+      <div class="prototype-placeholder">
+        <div class="prototype-icon">🔬</div>
+        <h1 class="prototype-title">Product Prototype</h1>
+        <p class="prototype-text">
+          This page will showcase the Gold Diggers product prototype, including 
+          interactive mockups, demo videos, and interface walkthroughs.
+        </p>
+        <a href="index.html" class="back-link">
+          ← Return to main site
+        </a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gold Diggers — AI-driven decision-support system for mining feasibility analysis. Reduce drilling costs by 50–70% and get probabilistic NPV estimates in days, not months.">
+  <meta name="keywords" content="mining feasibility, AI, Kriging, geostatistics, NPV analysis, decision support, ore grade estimation">
+  <meta name="author" content="Team Innovax">
+  <title>Gold Diggers — AI-Powered Mining Feasibility Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⛏️</text></svg>">
+</head>
+<body>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-brand">
+        <img src="images/logo.png" alt="Gold Diggers Logo">
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Gold Diggers</span>
+          <span class="nav-brand-tagline">AI Mining Intelligence</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#technology" class="nav-link">Technology</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="prototype.html" class="btn btn-primary nav-cta">View Prototype</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ HERO SECTION ═══════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero-bg.png" alt="Open-pit mine with AI data overlay">
+    </div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Disrupting $3B Mining Consulting Market
+        </div>
+        <h1 class="hero-title">
+          Smarter Mining<br>Decisions with <span class="highlight">AI Intelligence</span>
+        </h1>
+        <p class="hero-description">
+          Gold Diggers is an AI-driven decision-support platform that evaluates mining feasibility 
+          using Kriging-enhanced geostatistics — delivering probabilistic NPV estimates in days, 
+          not months, at a fraction of traditional costs.
+        </p>
+        <div class="hero-actions">
+          <a href="#features" class="btn btn-primary">
+            Explore Platform
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="prototype.html" class="btn btn-secondary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            View Prototype
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-count="70">0%</div>
+            <div class="hero-stat-label">Less Drilling Needed</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-count="90">0%</div>
+            <div class="hero-stat-label">Faster Analysis</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-value" data-prefix="$" data-count="5" data-suffix="K">$0</div>
+            <div class="hero-stat-label">Starting Price</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ TRUST BAR ═══════════════ -->
+  <section class="trust-bar">
+    <div class="container">
+      <p class="trust-bar-label">Targeted Industry Partners & Grant Programs</p>
+      <div class="trust-logos">
+        <span class="trust-logo">TÜBITAK</span>
+        <span class="trust-logo">EU Horizon</span>
+        <span class="trust-logo">PDAC</span>
+        <span class="trust-logo">IMARC</span>
+        <span class="trust-logo">AWS</span>
+        <span class="trust-logo">GCP</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ ABOUT / PROBLEM ═══════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content reveal">
+          <span class="section-label">The Problem</span>
+          <h2 class="section-title">Mining Investments Are Flying Blind</h2>
+          <p class="about-text">
+            A typical pre-feasibility study costs millions of dollars and takes 1–2 years 
+            before anyone knows whether a project is worth pursuing. At $500 per meter of 
+            drilling, the math gets uncomfortable fast — and a significant share of those 
+            projects never reach a positive NPV.
+          </p>
+          <div class="about-highlight">
+            <p>
+              "Junior and intermediate mining companies, private equity funds, and project 
+              finance teams — the people who are actually placing early-stage bets — are 
+              largely flying blind. They have real capital at risk and very little in the 
+              way of affordable, fast screening tools."
+            </p>
+          </div>
+          <p class="about-text">
+            Gold Diggers was built for that gap. We combine machine learning with classical 
+            geostatistical methods like Kriging to produce reliable ore grade and spatial 
+            distribution estimates from far fewer drill samples than conventional workflows demand.
+          </p>
+        </div>
+        <div class="about-image reveal reveal-delay-2">
+          <img src="images/dashboard.png" alt="Gold Diggers AI Dashboard showing probabilistic NPV analysis">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FEATURES ═══════════════ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="features-header reveal">
+        <span class="section-label">Core Capabilities</span>
+        <h2 class="section-title">Everything You Need for<br>Smarter Feasibility Screening</h2>
+        <p class="section-subtitle">
+          Our platform integrates geological, operational, and financial data into a single 
+          AI-powered assessment engine — providing risk-adjusted predictions that traditional 
+          methods simply cannot match.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Probabilistic NPV Estimation</h3>
+          <p class="feature-description">
+            Unlike deterministic models that give you a single number, Gold Diggers delivers 
+            probability-weighted NPV ranges with explicit uncertainty bounds — exactly what 
+            early-stage capital allocation decisions require.
+          </p>
+        </div>
+
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">🗺️</div>
+          <h3 class="feature-title">AI-Enhanced Kriging</h3>
+          <p class="feature-description">
+            Our proprietary ML models augment classical Kriging geostatistics with historical 
+            drilling data from comparable regions, enabling accurate spatial interpolation with 
+            50–70% fewer drill samples.
+          </p>
+        </div>
+
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Rapid Pre-Screening</h3>
+          <p class="feature-description">
+            What traditionally takes 12–18 months and millions of dollars, Gold Diggers 
+            completes in days. Upload your project parameters, receive a comprehensive 
+            risk analysis report — fast.
+          </p>
+        </div>
+
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title">Scenario Simulation Engine</h3>
+          <p class="feature-description">
+            Stress-test your mining investment under multiple commodity price scenarios, 
+            jurisdiction risk levels, and geological uncertainty parameters. See how your 
+            project performs across futures.
+          </p>
+        </div>
+
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">🌍</div>
+          <h3 class="feature-title">Jurisdiction Risk Scoring</h3>
+          <p class="feature-description">
+            Built-in geopolitical and regulatory risk scoring automatically adjusts your 
+            feasibility estimates based on mining jurisdiction — from stable regions to 
+            high-risk frontier territories.
+          </p>
+        </div>
+
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon">🔧</div>
+          <h3 class="feature-title">Engineer-Friendly Dashboard</h3>
+          <p class="feature-description">
+            Designed with field engineers in mind. Our web-based interface makes complex 
+            AI outputs intuitive and actionable — no data science expertise required to 
+            interpret the results.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="how-header reveal">
+        <span class="section-label">Workflow</span>
+        <h2 class="section-title">From Raw Data to<br>Investment Confidence</h2>
+        <p class="section-subtitle">
+          Our streamlined 4-step process transforms geological data into actionable 
+          economic intelligence in a fraction of the time and cost.
+        </p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3 class="step-title">Upload Geological Data</h3>
+            <p class="step-description">
+              Import your drilling data, geological surveys, and project parameters through 
+              our secure web portal. We support standard mining software formats including 
+              Leapfrog Geo and Datamine exports. Our system also cross-references historical 
+              data from geologically comparable regions.
+            </p>
+          </div>
+        </div>
+
+        <div class="step reveal reveal-delay-1">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3 class="step-title">AI-Driven Analysis</h3>
+            <p class="step-description">
+              Our machine learning models — trained on historical feasibility datasets — 
+              analyze your input alongside strip ratio, recovery rate, and grade estimation 
+              data. Classical Kriging is enhanced with AI to perform accurate spatial 
+              interpolation with significantly fewer drill points.
+            </p>
+          </div>
+        </div>
+
+        <div class="step reveal reveal-delay-2">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3 class="step-title">Probabilistic Modeling</h3>
+            <p class="step-description">
+              Rather than a single deterministic output, our system generates a range of 
+              NPV scenarios with explicit probability distributions. Commodity price 
+              sensitivity analysis and jurisdiction risk scoring are automatically integrated 
+              into the assessment.
+            </p>
+          </div>
+        </div>
+
+        <div class="step reveal reveal-delay-3">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3 class="step-title">Actionable Report</h3>
+            <p class="step-description">
+              Receive a comprehensive feasibility screening report through our interactive 
+              dashboard. Visualize ore distribution maps, NPV probability curves, and risk 
+              scenarios — all designed to support faster, more confident capital allocation 
+              decisions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ VALUE PROPOSITION ═══════════════ -->
+  <section class="value-prop" id="value-proposition">
+    <div class="container">
+      <div class="value-prop-header reveal">
+        <span class="section-label">Why Gold Diggers</span>
+        <h2 class="section-title">The Competitive Edge<br>Traditional Methods Can't Match</h2>
+        <p class="section-subtitle">
+          Gold Diggers doesn't replace geological expertise — it amplifies it with AI, 
+          providing sharper insights at a speed and cost traditional methods cannot achieve.
+        </p>
+      </div>
+
+      <div class="value-grid">
+        <div class="value-card reveal reveal-delay-1">
+          <div class="value-card-icon">💰</div>
+          <div>
+            <h3 class="value-card-title">Cut Exploration Costs by 50–70%</h3>
+            <p class="value-card-text">
+              AI-assisted Kriging achieves comparable accuracy with dramatically fewer drill 
+              operations, saving millions in upfront exploration expenditure.
+            </p>
+          </div>
+        </div>
+
+        <div class="value-card reveal reveal-delay-2">
+          <div class="value-card-icon">⏱️</div>
+          <div>
+            <h3 class="value-card-title">From Months to Days</h3>
+            <p class="value-card-text">
+              Traditional feasibility studies take 12–18 months. Gold Diggers delivers 
+              pre-screening results in days, accelerating your investment pipeline.
+            </p>
+          </div>
+        </div>
+
+        <div class="value-card reveal reveal-delay-1">
+          <div class="value-card-icon">📈</div>
+          <div>
+            <h3 class="value-card-title">Risk-Adjusted Capital Allocation</h3>
+            <p class="value-card-text">
+              Probabilistic NPV estimation with uncertainty bounds means better portfolio 
+              decisions — allocate capital to high-probability projects, not hopeful guesses.
+            </p>
+          </div>
+        </div>
+
+        <div class="value-card reveal reveal-delay-2">
+          <div class="value-card-icon">🔗</div>
+          <div>
+            <h3 class="value-card-title">Complement, Not Replace</h3>
+            <p class="value-card-text">
+              Gold Diggers is a pre-feasibility screening tool that complements traditional 
+              studies — helping you decide which projects deserve full-scale investment.
+            </p>
+          </div>
+        </div>
+
+        <div class="value-card reveal reveal-delay-1">
+          <div class="value-card-icon">🛡️</div>
+          <div>
+            <h3 class="value-card-title">Eliminate Deterministic Bias</h3>
+            <p class="value-card-text">
+              Single-point NPV outputs mask true investment risk. Our probabilistic approach 
+              reveals the full spectrum of possible outcomes for informed decision-making.
+            </p>
+          </div>
+        </div>
+
+        <div class="value-card reveal reveal-delay-2">
+          <div class="value-card-icon">🌐</div>
+          <div>
+            <h3 class="value-card-title">Cloud-Based SaaS Platform</h3>
+            <p class="value-card-text">
+              No installation required. Access your analysis dashboard from anywhere 
+              through our secure, web-based portal with real-time collaboration features.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ PRICING ═══════════════ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="pricing-header reveal">
+        <span class="section-label">Fee-Per-Analysis</span>
+        <h2 class="section-title">Transparent, Project-Based Pricing</h2>
+        <p class="section-subtitle">
+          Pay only for what you use. Our fee-per-analysis model scales with project 
+          complexity — making advanced feasibility screening accessible to companies 
+          of all sizes.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="pricing-card reveal reveal-delay-1">
+          <div class="pricing-tier">Starter</div>
+          <h3 class="pricing-name">Quick Screen</h3>
+          <div class="pricing-price">$5K <span>/ analysis</span></div>
+          <p class="pricing-desc">Basic pre-screening for early-stage projects</p>
+          <ul class="pricing-features">
+            <li>Up to 50 drill hole inputs</li>
+            <li>Single commodity analysis</li>
+            <li>Probabilistic NPV range</li>
+            <li>Standard report output</li>
+            <li>3-day turnaround</li>
+          </ul>
+          <a href="#" class="btn btn-secondary">Get Started</a>
+        </div>
+
+        <div class="pricing-card featured reveal reveal-delay-2">
+          <div class="pricing-tier">Professional</div>
+          <h3 class="pricing-name">Full Assessment</h3>
+          <div class="pricing-price">$25K <span>/ analysis</span></div>
+          <p class="pricing-desc">Comprehensive feasibility with scenario modeling</p>
+          <ul class="pricing-features">
+            <li>Up to 200 drill hole inputs</li>
+            <li>Multi-commodity analysis</li>
+            <li>Full scenario simulation</li>
+            <li>Jurisdiction risk scoring</li>
+            <li>Interactive dashboard access</li>
+            <li>48-hour turnaround</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <div class="pricing-card reveal reveal-delay-3">
+          <div class="pricing-tier">Enterprise</div>
+          <h3 class="pricing-name">Portfolio Suite</h3>
+          <div class="pricing-price">$50K+ <span>/ analysis</span></div>
+          <p class="pricing-desc">Advanced portfolio-level risk assessment</p>
+          <ul class="pricing-features">
+            <li>Unlimited drill hole inputs</li>
+            <li>Multi-project comparison</li>
+            <li>Real-time commodity integration</li>
+            <li>Custom model calibration</li>
+            <li>Dedicated account manager</li>
+            <li>Priority 24-hour turnaround</li>
+          </ul>
+          <a href="#" class="btn btn-secondary">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ TECHNOLOGY ═══════════════ -->
+  <section class="technology" id="technology">
+    <div class="container">
+      <div class="tech-header reveal">
+        <span class="section-label">Tech Stack</span>
+        <h2 class="section-title">Built on Proven Technologies</h2>
+        <p class="section-subtitle">
+          Our platform leverages industry-leading tools for AI, geostatistics, 
+          and cloud computing — delivering enterprise-grade reliability at startup speed.
+        </p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-item reveal reveal-delay-1">
+          <div class="tech-item-icon">🧠</div>
+          <div class="tech-item-name">TensorFlow</div>
+          <div class="tech-item-desc">Deep Learning Models</div>
+        </div>
+        <div class="tech-item reveal reveal-delay-2">
+          <div class="tech-item-icon">🔥</div>
+          <div class="tech-item-name">PyTorch</div>
+          <div class="tech-item-desc">Neural Networks</div>
+        </div>
+        <div class="tech-item reveal reveal-delay-3">
+          <div class="tech-item-icon">📐</div>
+          <div class="tech-item-name">scikit-learn</div>
+          <div class="tech-item-desc">Predictive Models</div>
+        </div>
+        <div class="tech-item reveal reveal-delay-4">
+          <div class="tech-item-icon">🐍</div>
+          <div class="tech-item-name">Python</div>
+          <div class="tech-item-desc">Core Platform</div>
+        </div>
+        <div class="tech-item reveal reveal-delay-1">
+          <div class="tech-item-icon">🌍</div>
+          <div class="tech-item-name">Leapfrog Geo</div>
+          <div class="tech-item-desc">Geological Modeling</div>
+        </div>
+        <div class="tech-item reveal reveal-delay-2">
+          <div class="tech-item-icon">⛏️</div>
+          <div class="tech-item-name">Datamine</div>
+          <div class="tech-item-desc">Mining Data Integration</div>
+        </div>
+        <div class="tech-item reveal reveal-delay-3">
+          <div class="tech-item-icon">☁️</div>
+          <div class="tech-item-name">AWS / GCP</div>
+          <div class="tech-item-desc">Cloud Infrastructure</div>
+        </div>
+        <div class="tech-item reveal reveal-delay-4">
+          <div class="tech-item-icon">📊</div>
+          <div class="tech-item-name">NumPy & Pandas</div>
+          <div class="tech-item-desc">Data Processing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ TEAM ═══════════════ -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="team-header reveal">
+        <span class="section-label">Our Team</span>
+        <h2 class="section-title">Meet the Innovax Team</h2>
+        <p class="section-subtitle">
+          A multidisciplinary founding team combining AI expertise, software 
+          engineering, and data science — united by a shared vision for smarter mining.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card reveal reveal-delay-1">
+          <div class="team-avatar">CG</div>
+          <h3 class="team-name">Celal Gündoğdu</h3>
+          <p class="team-role">Project Manager & Data Scientist</p>
+          <p class="team-bio">
+            Combines management experience with deep machine learning knowledge. 
+            Responsible for project planning, organization, industry communication, 
+            and data science strategy.
+          </p>
+          <span class="team-id">150230007</span>
+        </div>
+
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-avatar">DS</div>
+          <h3 class="team-name">Deniz Sipahi</h3>
+          <p class="team-role">Lead AI Engineer</p>
+          <p class="team-bio">
+            Heads the AI division with deep expertise in artificial intelligence 
+            systems. Responsible for model architecture decisions, training processes, 
+            and accuracy optimization.
+          </p>
+          <span class="team-id">150230006</span>
+        </div>
+
+        <div class="team-card reveal reveal-delay-3">
+          <div class="team-avatar">MB</div>
+          <h3 class="team-name">Mehmet Berkay Balcı</h3>
+          <p class="team-role">Full-Stack Developer</p>
+          <p class="team-bio">
+            Builds both backend infrastructure and user-facing interfaces. 
+            Specializes in creating engineer-friendly UIs that overcome industry 
+            conservatism toward new technology.
+          </p>
+          <span class="team-id">150230090</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CTA ═══════════════ -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="cta-content reveal">
+        <span class="section-label">Get Started</span>
+        <h2 class="cta-title">Ready to Make Smarter Mining Investments?</h2>
+        <p class="cta-text">
+          Join the next generation of mineral asset evaluation. Request a demo 
+          or explore our prototype to see Gold Diggers in action.
+        </p>
+        <div class="cta-actions">
+          <a href="#" class="btn btn-primary">
+            Request a Demo
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="prototype.html" class="btn btn-secondary">View Prototype</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-brand">
+            <img src="images/logo.png" alt="Gold Diggers">
+            <div class="nav-brand-text">
+              <span class="nav-brand-name">Gold Diggers</span>
+              <span class="nav-brand-tagline">AI Mining Intelligence</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            An AI-driven decision-support system that evaluates the economic feasibility 
+            of mining operations by analyzing geological drilling data to minimize 
+            investment risks.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Platform</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="prototype.html">Prototype</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 Gold Diggers by Team Innovax — Istanbul Technical University, BLG442E</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="LinkedIn">in</a>
+          <a href="#" class="footer-social" aria-label="GitHub">⌘</a>
+          <a href="#" class="footer-social" aria-label="Twitter">𝕏</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
